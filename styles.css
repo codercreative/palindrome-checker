@@ -89,11 +89,20 @@ body {
   font-size: 1rem;
 }
 
-.user-input {
-  height: 100%;
-  margin-bottom: 1em;
+.user-input span {
+  font-weight: bold;
 }
+
+/* Utility classes */
 
 .hidden {
   display: none;
+}
+
+.red-color {
+  color: #ff0000;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
 }
