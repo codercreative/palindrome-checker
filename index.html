@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Palindrome Checker</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="palindrome-div">
+        <h1 class="title">Is it a Palindrome?</h1>
+        <div class="check-container">
+          <div class="input-container">
+            <label class="input-label" for="text-input"
+              >Enter text to check for a palindrome:
+            </label>
+            <input type="text" class="text-input" id="text-input" />
+          </div>
+          <div class="hidden" id="result">
+            <p class="user-input">
+              racecar is a palindrome
+              <!-- JavaScript message here -->
+            </p>
+          </div>
+          <button class="check-btn" id="check-btn">Check</button>
+        </div>
+        <div class="palindrome-definition-div">
+          <p>
+            A <dfn>palindrome</dfn> is a word or sentence that's spelled the
+            same way both forward and backward, ignoring punctuation, case and
+            spacing
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
