@@ -5,9 +5,10 @@ const checkForPalindrome = () => {
   const userInputValue = document.getElementById("text-input").value;
 
   if (userInputValue === "") {
-    let alertMessage = "Please enter a value";
+    let alertMessage = "Please enter a value.";
     result.innerHTML = `<p>${alertMessage}</p>`;
     result.classList.add("red-color");
+    result.classList.remove("black-color");
     result.classList.add("margin-bottom");
     result.classList.remove("hidden");
   } else {
@@ -19,6 +20,8 @@ const checkForPalindrome = () => {
       lowerCaseStr === reversedStr ? "is" : "is not"
     } a palindrome.`;
     result.innerHTML = `<p class="user-input">${message}</p>`;
+    result.classList.remove("red-color");
+    result.classList.add("black-color");
     result.classList.remove("hidden");
   }
 };
